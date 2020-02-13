@@ -1,0 +1,2 @@
+INSERT INTO `rsp3635`.`Booking` (`bookingNumber`, `customerID`, `passengerName`, `passengerPhone`, `unitNumber`, `streetNumber`, `streetName`, `suburb`, `destinationSuburb`, `pickupDate`, `pickupTime`, `bookingDatetime`, `bookingStatus`)
+VALUES ('1', '1', 'Charlie', '0273513346', NULL, '24', 'Tapuwae Way', 'Mangere Bridge', '8 Mount Street, Grafton', '2019-05-29', '01:00:00', '2019-05-28 00:00:00', 'unassigned');

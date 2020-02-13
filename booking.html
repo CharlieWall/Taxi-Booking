@@ -1,0 +1,52 @@
+<html>
+<head>
+<meta http-equiv = "content-type" content = "text/html; charset=utf-8"/>
+<script type = "text/javascript" src = "xhr.js"></script>
+<script type = "text/javascript" src = "booking.js"></script>
+<title>Taxi Booking</title>
+</head>
+<body>
+<h1>Taxi Booking</h1>
+<form>
+	<table>
+	<p><label for = "customerName">* Customer name: </label>
+	<input type = "text" name = "customerName" required = "required"/></p>
+	
+	<p><label for = "customerNumber">* Customer number: </label>
+	<input type = "text" name = "customerNumber" required = "required"/></p>
+	
+	<p><label for = "unitNumber">Unit number: </label>
+	<input type = "text" name = "unitNumber"/></p>
+	
+	<p><label for = "streetNumber">* Street number: </label>
+	<input type = "text" name = "streetNumber" required = "required"/></p>
+	
+	<p><label for = "streetName">* Street name: </label>
+	<input type = "text" name = "streetName" required = "required"/></p>
+	
+	<p><label for = "suburb">* Suburb: </label>
+	<input type = "text" name = "suburb" required = "required"/></p>
+	
+	<p><label for = "destination">* Destination: </label>
+	<input type = "text" name = "destination" required = "required"/></p>
+	
+	<p><label for = "pickupDate">* Pickup date: </label>
+	<input type = "date" name = "pickupDate" required = "required"/></p>
+	
+	<p><label for = "pickupTime">* Pickup time: </label>
+	<input type = "time" name = "pickupTime" required = "required"/></p>
+	
+	<tr>
+	<td>
+	
+	<input type = "button" value = "Book" onclick = "createBooking('bookingprocess.php', 'bookingDiv', customerName.value, customerNumber.value, unitNumber.value, streetNumber.value, streetName.value, suburb.value, destination.value, pickupDate.value, pickupTime.value)"/>
+	</td>
+	<td></td>
+	</tr>
+	</table>
+</form>
+<div id = "bookingDiv">
+</div>
+</body>
+</html>
+	

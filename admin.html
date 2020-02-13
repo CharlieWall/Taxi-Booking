@@ -1,0 +1,25 @@
+<html>
+<head>
+<meta http-equiv = "content-type" content = "text/html; charset=utf-8"/>
+<script type = "text/javascript" src = "xhr.js"></script>
+<script type = "text/javascript" src = "admin.js"></script>
+<title>Admin</title>
+</head>
+<body>
+<h1>Taxi Booking</h1>
+<h2>Click the 'Display' button to view all taxi bookings for the next two hours</h2>
+<form>
+<input type = "button" value = "Display" onClick = "getData('adminform.php', 'bookingDiv')"/>
+</form>
+<div id = "bookingDiv">
+</div>
+<form>
+<p>Please enter the booking reference: </p>
+<input type = "text" name = "ref">
+<input type = "button" value = "Submit" onClick = "getNumber('adminprocess.php', 'refDiv', ref.value)"/>
+</form>
+<div id = "refDiv">
+</div>
+<a href = "booking.html">Make a booking</a>
+</body>
+</html>
